@@ -1,5 +1,5 @@
 import Languages from '../components/Languages'
-import Language from '../components/Language'
+import Language from './components/Language'
 import './App.css';
 
 //COMPONENTS
