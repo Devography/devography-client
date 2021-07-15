@@ -5,7 +5,7 @@ export default function Home() {
     <>
       <h2 style={{ textAlign: "center" }}>
         {" "}
-        {"{"} Comments {"}"}
+        {"{"} Hello World {"}"}
       </h2>
 
       <Carousel>
