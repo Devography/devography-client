@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 
 import "./App.css";
-import { Route } from 'react-router-dom'
+import { Route, Switch } from 'react-router-dom'
 
 // COMPONENTS
 import Languages from "./components/Languages";
@@ -36,14 +36,20 @@ function App() {
     //eslint-disable-next-line
   },[])
 
+  if (languages.length === 0) {
+    return <p>Loading...</p>
+  }
+
 
   return (
       <div className="app">
         <NavHeader />
-        <Route path="/" exact render={(routerProps) => <Home /> } />
-        <Route path="/languages" render={(routerProps) => <Languages match={routerProps.match} languages={languages} /> } />
-        <Route path="/languages/:id" render={(routerProps) => <Language /> } />
-        {/* <Footer />  CONFIRM IF NEEDED */}
+        <Switch>
+          <Route path="/" exact render={(routerProps) => <Home /> } />
+          <Route path="/languages/:id" render={(routerProps) => <Language match={routerProps.match} /> } />
+          <Route path="/languages" render={(routerProps) => <Languages match={routerProps.match} languages={languages} /> } />
+          {/* <Footer />  CONFIRM IF NEEDED */}
+        </Switch>
       </div>
   );
 }
