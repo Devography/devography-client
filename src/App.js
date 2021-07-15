@@ -1,3 +1,5 @@
+import { useState, useEffect } from 'react'
+
 import "./App.css";
 import { Route } from 'react-router-dom'
 
@@ -14,14 +16,35 @@ import NavHeader from "./components/NavHeader";
 // import Footer from "./components/Footer";
 
 function App() {
+
+  const [languages, setLanguages] = useState([])
+
+  const getLanguages = async () => {
+    const API_ENDPOINT = 'http://localhost:4000/languages'
+    try {
+      const response = await fetch(API_ENDPOINT)
+      const data = await response.json()
+      setLanguages(data)
+      console.log(data)
+    } catch (err) {
+      console.log(err)
+    }
+  }
+
+  useEffect(() => {
+    getLanguages()
+    //eslint-disable-next-line
+  },[])
+
+
   return (
-    <>
-      <NavHeader />
-      <Route path="/" exact render={(routerProps) => <Home /> } />
-      <Route path="/languages" render={(routerProps) => <Languages /> } />
-      <Route path="/languages/:id" render={(routerProps) => <Language /> } />
-      {/* <Footer />  CONFIRM IF NEEDED */}
-    </>
+      <div className="app">
+        <NavHeader />
+        <Route path="/" exact render={(routerProps) => <Home /> } />
+        <Route path="/languages" render={(routerProps) => <Languages match={routerProps.match} languages={languages} /> } />
+        <Route path="/languages/:id" render={(routerProps) => <Language /> } />
+        {/* <Footer />  CONFIRM IF NEEDED */}
+      </div>
   );
 }
 
