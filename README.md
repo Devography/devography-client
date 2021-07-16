@@ -16,10 +16,10 @@ CSS
 Yarn
 
 ## Learning Experience
-Cut problems into smaller pieces and console.log any unknown data. This was our first project as a team and so we relied heavily upon each other to debug our own problems. We learned a lot about division of labor, project management, and how to utilize each of our individual strengths. Read documentation!!! Most of the answers are available if you know where and how to search.
+This was our first project as a team and so we relied heavily upon each other to debug our own problems. We learned a lot about division of labor, project planning, project management, and how to utilize each of our individual strengths. Read documentation!!! Most of the answers are available if you know where and how to search.
 
 ## Setting Up Project
-One of the key feature of React is the composition of the functional components. Components are reuseable functions in React, and in order to efficiently build our app, we had to carefully decide on a uniform set of data and plan who would work on which components. Before diving into the creating the app, understanding the components hierarchy.
+One of the key feature of React is the composition of the functional components. Components are reuseable functions in React, and in order to efficiently build our app, we had to carefully decide on a uniform set of data and plan who would work on which components. Before diving into the creating the app, understanding the components hierarchy is required.
 
 
 ## Setting Up Core Structure
