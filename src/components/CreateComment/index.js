@@ -12,7 +12,7 @@ const history = useHistory();
 
 const getIndividualLanguage = async () => {
     try{
-        const response = await fetch(`http:localhost:8080/languages${match.params.id}`);
+        const response = await fetch(`http:localhost:4000/languages${match.params.id}`);
         const data = response.json();
         setLanaguage(data)
     }catch(err){
@@ -48,7 +48,7 @@ const _handleChange = (e) => {
 
 const _handleSubmit = async(event) => {
     event.preventDefault();
-    const COMM_API_ENDPOINT = `http://localhost:8080/comments`
+    const COMM_API_ENDPOINT = `http://localhost:4000/comments`
     try{
         const response = await fetch(COMM_API_ENDPOINT, {
             method: 'POST',
