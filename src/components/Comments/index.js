@@ -1,3 +1,4 @@
+import {useState, useEffect} from 'react'
 import Container from 'react-bootstrap/Container'
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
@@ -60,7 +61,7 @@ export default function Comments({ match }){
                             <Link style={{
                                     textDecoration:'none',
                                     color:'rgb(97, 106, 113)'
-                                    }} to={`/`}>EDIT</Link>
+                                    }} to={`/languages/${match.params.id}/comments/${comment._id}/edit`}>EDIT</Link>
                             </Button>
                             <Button variant="secondary" onClick={_handleDelete} value={comment._id}>DELETE</Button>
                         </div>
@@ -70,5 +71,3 @@ export default function Comments({ match }){
         </Container>
     )
 }
-
-// Link to={`/comments/${comment._id}/edit`}

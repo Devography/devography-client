@@ -8,6 +8,7 @@ import Languages from "./components/Languages";
 import Language from "./components/Language";
 import Home from "./components/Home";
 import NavHeader from "./components/NavHeader";
+import EditComment from './components/EditComment'
 
 function App() {
   const [languages, setLanguages] = useState([]);
@@ -41,6 +42,7 @@ function App() {
           exact
           render={(routerProps) => <Home languages={languages} />}
         />
+        <Route path="/languages/:id/comments/:commentId/edit" render={(routerProps) => <EditComment match={routerProps.match} getLanguages={getLanguages}/>} />
         <Route
           path="/languages/:id"
           render={(routerProps) => <Language match={routerProps.match} />}
