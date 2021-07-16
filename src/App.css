@@ -1,9 +1,21 @@
 body {
-  background-image: linear-gradient(rgb(255, 204, 146),rgba(121, 96, 67, 0.2)) !important;
-  height:100vh;
-  /* background-position: center; */
+  background: linear-gradient(rgb(255, 204, 146),rgba(121, 96, 67, 0.2)) fixed !important;
+}
+
+a {
+  color: #333333 !important;
+  text-decoration: none !important;
+}
+
+a:hover {
+  color: #696969 !important;
 }
 
 p,h1,h2,h3,h4,h5,h6 {
   color:#333333 !important;
+}
+
+.card {
+  background-color: rgba(255,255,255, 0.2) !important;
+  padding: 30px 20px;
 }
