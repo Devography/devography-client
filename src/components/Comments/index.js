@@ -48,7 +48,12 @@ export default function Comments(){
                 return(
                     <div className='comment-container' key={i}>
                         <div className='comment-items'>
-                            <p><span style={{color:'blue'}}>{comment.name}</span>: {comment.body}</p>     
+                            <p><span style={{color:'blue'}}>{comment.name}</span>: {comment.body}</p>
+                            {comment.createdAt === comment.updatedAt ? (
+				                <small>Created at: {new Date(comment.createdAt).toLocaleString()}</small>
+			                    ) : (
+				                <small>Updated at: {new Date(comment.updatedAt).toLocaleString()}</small>
+			                )}     
                         </div>
                         <div>
                             <Button variant="outline-secondary"> 
