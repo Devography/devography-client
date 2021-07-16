@@ -2,7 +2,6 @@ import {useState, useEffect} from 'react'
 import Container from 'react-bootstrap/Container'
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
-import { useState, useEffect } from 'react';
 
 export default function Comments({ match }){
 
@@ -15,7 +14,7 @@ export default function Comments({ match }){
         try{
             const response = await fetch(LANG_API_ENDPOINT);
             const data = await response.json();
-            setComments(data.comment)
+            setComments(data.comments)
         }catch(err){
             console.log(err)
         }
@@ -42,6 +41,10 @@ export default function Comments({ match }){
         }catch(err){
             console.log(err)
         }
+    }
+
+    if (!comments) {
+        return <p>No comments</p>
     }
 
     return(
