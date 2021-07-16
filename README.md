@@ -26,20 +26,20 @@ component-tree.png<img width="514" alt="component-tree" src="https://user-images
 
 ## Setting Up Core Structure
 React Components
-The Component Hierarchy diagram, above, represents of how the components are structured in our app. In devOgraphy, there are 8 components. Each being a child of the 'App' components, minus the 'Recipes' and 'Recipe'.
+The Component Hierarchy diagram, above, represents of how the components are structured in our app. In devOgraphy, there are 6 components. Each being a child of the 'App' components, except for the 'Footer' and 'NavHeader'.
 
-In this case, all of the event listeners and the main API calls was done in the 'App.js' file and is passed down to the Search Components, then to Recipes and Recipe.
+In this case, all of the event listeners and the main API calls was done in the 'App.js' file and is passed down to the Search Components, then to Languages and Language.
 
 ## Dynamic API Calls
 By creating our own API, the App is able to make dynamic request. For this app, the programming languages endpoint was used. So different props variables were created to make multiple calls.
 
 ## User Experience
-Creating a responsive App. During my last project, I created an app that was not mobile friendly. With that in mind, this app was to ensure it was responsive. With the help of bootstrap and flex, the app can be view on different media screen.
+This app uses a combination of React bootstrap and Flexbox along with media queries to make it responsive across mobile, tablet, and desktop devices.
 
 
 ## Future Directions
 Creating a 'Favorite' Section (In-progress)
-Using another API call that allows the user to search food products via barcode or string search to get the nutrition facts.
+.
 
 ## Accomplishments
 The app is responsive.
