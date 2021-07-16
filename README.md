@@ -1,19 +1,60 @@
 ## devOgraphy
-devOgraphy_mobile.jpeg![devOgraphy_mobile](https://user-images.githubusercontent.com/65795477/125980378-26c0e672-d7a1-4ea6-8fff-702595eec637.jpeg)
 
+[Home_Mobile](https://user-images.githubusercontent.com/65795477/125976547-f39ebe7f-00e5-4988-b107-ff53a5ca906f.jpeg)
 
 
 ## Project Description
-devOgraphy is a working, interactive, full-stack application that receives data from a custom build API. The app allows users to find information about a specific programming language and to view the language's icon, creation date, author, and .
+devOgraphy is a working, interactive, full-stack application that receives data from a custom API that we designed. The app allows users to learn more about programming languages, their icons, their authors, and their creation date.
+
+Your front-end must use React and leverage the backend API in the above requirements.
+You must communicate with the back-end API RESTfully to Create, Read, Update, and Destroy resources (using either fetch or axios).
+You must use either CSS Grid or Flexbox along with media queries to make your app responsive across mobile, tablet, and desktop widths.
+You must have at least 4 components
+
 
 Link To Site: https://devography.netlify.app/
 
 ## Programs/Applications Used:
 React
-React BootStrap
 JSX
 CSS
 Yarn
+
+
+## Dependencies
+react": "^17.0.2",
+    "react-bootstrap": "^1.6.1",
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.2.0",
+    "react-router": "^5.2.0",
+    "react-router-bootstrap": "^0.25.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+
+## Learning Experience
+Cut problems into smaller pieces and console.log any unknown data. This was our first project as a team and so we relied heavily upon each other to debug our own problems. We learned a lot about communication, division of labor, project management, and how to utilize each of our individual strengths. Read documentation!!! Most of the answers are available if you know where and how to search.
+
+## Setting Up Project
+One of the key feature of React is the composition of the functional components. Components are reuseable functions in React, and in order to efficiently build our app, we had to carefully decide on a uniform set of data and plan who would work on which components. Before diving into the creating the app, it was important to understand the components hierarchy.
+
+
+
+## Building the Core Structure
+React Components
+The Component Hierarchy diagram, above, represents of how the components are structured in our app. In devOgraphy, there are 8 components. Each being a child of the 'App' components, except for the NavHeader and the Footer component.
+
+In this case, all of the event listeners and the main API calls were done in the 'App.js' file and that data is passed down to Languages and then Language.
+
+
+
+## Dynamic API Calls
+By creating our own API, the App is able to make dynamic request. For this app, the programming languages endpoint was used. So different props variables were created to make multiple calls.
+
+## User Experience - Responsive design.
+Creating a responsive App. devOgraphy uses React bootstap along with Flexbox and media queries in order to make it responsive across mobile, tablet, and desktop widths.
+
+## Problem Areas
+One of the problem area was the API call being blocked by the CORS poilcy. Cross-origin resource sharing (CORS) allows the server to indicate other origins. To bypass the error, mode is a read only property that contains different type of mofe of request, one of which is 'cors'.
 
 ## Learning Experience
 This was our first project as a team and so we relied heavily upon each other to debug our own problems. We learned a lot about division of labor, project planning, project management, and how to utilize each of our individual strengths. Read documentation!!! Most of the answers are available if you know where and how to search.
@@ -35,6 +76,7 @@ By creating our own API, the App is able to make dynamic request. For this app, 
 
 ## User Experience
 This app uses a combination of React bootstrap and Flexbox along with media queries to make it responsive across mobile, tablet, and desktop devices.
+
 
 
 ## Future Directions
@@ -81,4 +123,4 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 
 ## License
-[MIT](https://choosealicense.com/licenses/mit/)
+
