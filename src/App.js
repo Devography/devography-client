@@ -1,19 +1,13 @@
 import { useState, useEffect } from 'react'
+import { Route, Switch } from 'react-router-dom'
 
 import "./App.css";
-import { Route, Switch } from 'react-router-dom'
 
 // COMPONENTS
 import Languages from "./components/Languages";
 import Language from "./components/Language";
 import Home from "./components/Home";
 import NavHeader from "./components/NavHeader";
-
-// MOVED COMPONENTS
-// import Comments from "./components/Comments"; // MOVED TO LANGUAGE.JS
-// import CreateComment from "./components/CreateComment"; MOVED TO LANGUAGE.JS
-// import EditComment from "./components/EditComment"; SUB-COMP OF COMMENTS.JS
-// import Footer from "./components/Footer";
 
 function App() {
 
@@ -25,7 +19,6 @@ function App() {
       const response = await fetch(API_ENDPOINT)
       const data = await response.json()
       setLanguages(data)
-      console.log(data)
     } catch (err) {
       console.log(err)
     }
