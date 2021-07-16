@@ -21,6 +21,8 @@ This was our first project as a team and so we relied heavily upon each other to
 ## Setting Up Project
 One of the key feature of React is the composition of the functional components. Components are reuseable functions in React, and in order to efficiently build our app, we had to carefully decide on a uniform set of data and plan who would work on which components. Before diving into the creating the app, understanding the components hierarchy is required.
 
+component-tree.png<img width="514" alt="component-tree" src="https://user-images.githubusercontent.com/65795477/125981555-ecc23dba-8ce6-4487-9529-a0735615e308.png">
+
 
 ## Setting Up Core Structure
 React Components
