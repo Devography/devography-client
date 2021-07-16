@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+## devOgraphy
+devOgraphy_mobile.jpeg![devOgraphy_mobile](https://user-images.githubusercontent.com/65795477/125980378-26c0e672-d7a1-4ea6-8fff-702595eec637.jpeg)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+## Project Description
+devOgraphy is a working, interactive, full-stack application that receives data from a custom build API. The app allows users to find information about a specific programming language and to view the language's icon, creation date, author, and .
 
-### `yarn start`
+Link To Site: https://devography.netlify.app/
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Programs/Applications Used:
+React
+React BootStrap
+JSX
+CSS
+Yarn
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Learning Experience
+This was our first project as a team and so we relied heavily upon each other to debug our own problems. We learned a lot about division of labor, project planning, project management, and how to utilize each of our individual strengths. Read documentation!!! Most of the answers are available if you know where and how to search.
 
-### `yarn test`
+## Setting Up Project
+One of the key feature of React is the composition of the functional components. Components are reuseable functions in React, and in order to efficiently build our app, we had to carefully decide on a uniform set of data and plan who would work on which components. Before diving into the creating the app, understanding the components hierarchy is required.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+component-tree.png<img width="514" alt="component-tree" src="https://user-images.githubusercontent.com/65795477/125981555-ecc23dba-8ce6-4487-9529-a0735615e308.png">
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Setting Up Core Structure
+React Components
+The Component Hierarchy diagram, above, represents of how the components are structured in our app. In devOgraphy, there are 6 components. Each being a child of the 'App' components, except for the 'Footer' and 'NavHeader'.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+In this case, all of the event listeners and the main API calls was done in the 'App.js' file and is passed down to the Search Components, then to Languages and Language.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Dynamic API Calls
+By creating our own API, the App is able to make dynamic request. For this app, the programming languages endpoint was used. So different props variables were created to make multiple calls.
 
-### `yarn eject`
+## User Experience
+This app uses a combination of React bootstrap and Flexbox along with media queries to make it responsive across mobile, tablet, and desktop devices.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Future Directions
+Creating a 'Favorite' Section (In-progress)
+.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Accomplishments
+The app is responsive.
+References
+React
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+# Foobar
 
-## Learn More
+Foobar is a Python library for dealing with word pluralization.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Installation / Dependencies
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
 
-### Code Splitting
+## Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```python
+import foobar
 
-### Analyzing the Bundle Size
+# returns 'words'
+foobar.pluralize('word')
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+# returns 'geese'
+foobar.pluralize('goose')
 
-### Making a Progressive Web App
+# returns 'phenomenon'
+foobar.singularize('phenomena')
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```
+## Roadmap
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Support
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-### `yarn build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
