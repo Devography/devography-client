@@ -1,12 +1,14 @@
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-import Modal from 'react-bootstrap/Modal'
+import Modal from 'react-bootstrap/Modal';
+import { useHistory } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 
 //pass out match from language
 export default function CreateComment({ match }){
 
 const [ language, setLanaguage ] = useState(null)
+const history = useHistory();
 
 const getIndividualLanguage = async () => {
     try{
@@ -58,6 +60,7 @@ const _handleSubmit = async(event) => {
         if (response.status === 201) {
             getIndividualLanguage();
             setNewComment(initialFormValues);
+            history.push(`languages/${match.params.id}`)
             handleClose();
         }else{
             alert("Oops, something went wrong. Try again")
