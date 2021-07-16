@@ -29,11 +29,11 @@ const Language = ({match}) => {
         <Card style={{width:'400px', margin:'20px auto'}}>
             <Card.Img variant="top" src={language.logo} />
             <Card.Body>
-            <ListGroup className="list-group-flush">
+            </Card.Body>
+            <ListGroup bsPrefix={'custom-card'}className="list-group-flush">
                 <ListGroup.Item>Author: {language.author}</ListGroup.Item>
                 <ListGroup.Item>Release Date: {language.year}</ListGroup.Item>
             </ListGroup>
-            </Card.Body>
         </Card>
         <CreateComment/>
         <Comments match={match} />
