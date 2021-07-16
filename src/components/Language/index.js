@@ -35,7 +35,7 @@ const Language = ({match}) => {
                 <ListGroup.Item>Release Date: {language.year}</ListGroup.Item>
             </ListGroup>
         </Card>
-        <CreateComment/>
+        <CreateComment match={match}/>
         <Comments match={match} />
         </>
     )

@@ -30,7 +30,7 @@ const _handleChange = (e) => {
 
 const _handleSubmit = async(event) => {
     event.preventDefault();
-    const COMM_API_ENDPOINT = `http://localhost:8080/comments/${match.params.id}`
+    const COMM_API_ENDPOINT = `http://localhost:4000/comments/${match.params.id}`
     try{
         const response = await fetch(COMM_API_ENDPOINT, {
             method: 'POST',

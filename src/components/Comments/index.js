@@ -15,7 +15,7 @@ export default function Comments({ match }){
         try{
             const response = await fetch(LANG_API_ENDPOINT);
             const data = await response.json();
-            setComments(data.comment)
+            setComments(data.comments)
         }catch(err){
             console.log(err)
         }
@@ -42,6 +42,10 @@ export default function Comments({ match }){
         }catch(err){
             console.log(err)
         }
+    }
+
+    if (!comments) {
+        return <p>No comments</p>
     }
 
     return(

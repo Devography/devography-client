@@ -1,5 +1,4 @@
 ## devOgraphy
-
 [Home_Mobile](https://user-images.githubusercontent.com/65795477/125976547-f39ebe7f-00e5-4988-b107-ff53a5ca906f.jpeg)
 
 
@@ -11,7 +10,6 @@ You must communicate with the back-end API RESTfully to Create, Read, Update, an
 You must use either CSS Grid or Flexbox along with media queries to make your app responsive across mobile, tablet, and desktop widths.
 You must have at least 4 components
 
-
 Link To Site: https://devography.netlify.app/
 
 ## Programs/Applications Used:
@@ -19,7 +17,6 @@ React
 JSX
 CSS
 Yarn
-
 
 ## Dependencies
 react": "^17.0.2",
@@ -55,28 +52,6 @@ Creating a responsive App. devOgraphy uses React bootstap along with Flexbox and
 
 ## Problem Areas
 One of the problem area was the API call being blocked by the CORS poilcy. Cross-origin resource sharing (CORS) allows the server to indicate other origins. To bypass the error, mode is a read only property that contains different type of mofe of request, one of which is 'cors'.
-
-## Learning Experience
-This was our first project as a team and so we relied heavily upon each other to debug our own problems. We learned a lot about division of labor, project planning, project management, and how to utilize each of our individual strengths. Read documentation!!! Most of the answers are available if you know where and how to search.
-
-## Setting Up Project
-One of the key feature of React is the composition of the functional components. Components are reuseable functions in React, and in order to efficiently build our app, we had to carefully decide on a uniform set of data and plan who would work on which components. Before diving into the creating the app, understanding the components hierarchy is required.
-
-component-tree.png<img width="514" alt="component-tree" src="https://user-images.githubusercontent.com/65795477/125981555-ecc23dba-8ce6-4487-9529-a0735615e308.png">
-
-
-## Setting Up Core Structure
-React Components
-The Component Hierarchy diagram, above, represents of how the components are structured in our app. In devOgraphy, there are 6 components. Each being a child of the 'App' components, except for the 'Footer' and 'NavHeader'.
-
-In this case, all of the event listeners and the main API calls was done in the 'App.js' file and is passed down to the Search Components, then to Languages and Language.
-
-## Dynamic API Calls
-By creating our own API, the App is able to make dynamic request. For this app, the programming languages endpoint was used. So different props variables were created to make multiple calls.
-
-## User Experience
-This app uses a combination of React bootstrap and Flexbox along with media queries to make it responsive across mobile, tablet, and desktop devices.
-
 
 
 ## Future Directions
