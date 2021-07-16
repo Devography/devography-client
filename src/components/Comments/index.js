@@ -1,6 +1,7 @@
 import Container from 'react-bootstrap/Container'
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 
 export default function Comments({ match }){
 
