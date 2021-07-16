@@ -1,8 +1,8 @@
 #devOgraphy
-Image of App
+![]Home_Mobile.jpeg
 
 #Project Description
-Cook Assistant is a working, interactive, React application that recieved data from Edamam, the third-party API. The app allows users to find a recipe that fits their dietary needs and search for any key ingredient that the user wants in the recipe. Click on the link below and start cooking!
+devOgraphy is a working, interactive, full-stack application that receives data from . The app allows users to find a recipe that fits their dietary needs and search for any key ingredient that the user wants in the recipe. Click on the link below and start cooking!
 
 Link To Site: https://devography.netlify.app/
 
@@ -21,51 +21,26 @@ One of the key feature of React is the composition of the functional components.
 
 Component Hierarchy 001
 
-Setting Up Core Structure
+#Setting Up Core Structure
 React Components
-The Component Hierarchy diagram, above, represents of how the components are strutured in our app. In devOgraphy, there are 8 components. Each being a child of the 'App' components, minus the 'Recipes' and 'Recipe'.
+The Component Hierarchy diagram, above, represents of how the components are structured in our app. In devOgraphy, there are 8 components. Each being a child of the 'App' components, minus the 'Recipes' and 'Recipe'.
 
 In this case, all of the event listeners and the main API calls was done in the 'App.js' file and is passed down to the Search Components, then to Recipes and Recipe.
 
-Dynamic API Calls
+#Dynamic API Calls
 By creating our own API, the App is able to make dynamic request. For this app, the programming languages endpoint was used. So different props variables were created to make multiple calls.
 
-Focusing on User Experience
+#Focusing on User Experience
 Creating a responsive App. During my last project, I created an app that was not mobile friendly. With that in mind, this app was to ensure it was responsive. With the help of bootstrap and flex, the app can be view on different media screen.
 
-Problem Areas
+#Problem Areas
 One of the problem area was the API call being blocked by the CORS poilcy. Cross-origin resource sharing (CORS) allows the server to indicate other origins. To bypass the error, mode is a read only property that contains different type of mofe of request, one of which is 'cors'.
-// App.js
-const getApiData = async () =>{
-const apiEndPoint = `${searchOptions.api}q=${searchString}&app_id=${searchOptions.id}&app_key=${searchOptions.key}&health=${searchHealth}`;
-try{
-const response = await fetch(apiEndPoint, {
-mode: 'cors'
-});
-const data = await response.json();
-// console.log(data);
-setRecipes(data.hits);
-}catch(error){
-console.log(error)
-}
-}
-Understanding conditional rendering. One of the issue is having fetch statement running before my JSX. To prevent that from happening, conditional rending to show a loading message to allow the request to catch up.
-// Recipe.js
-if (!uniqueRecipe){
-return <h1>Loading...</h1>;
-}else{
-return (
-<div className='recipe'>
-<h1>{name}</h1>
-<img src={uniqueRecipe.image} alt={uniqueRecipe.label}/>
-Error Message for Bad Strings. Think about the user experiences, there should be a message to indicate to the user the input does not yield any results.
 
-Future Directions
+#Future Directions
 Creating a 'Favorite' Section (In-progress)
 Using another API call that allows the user to search food products via barcode or string search to get the nutrition facts.
-Accomplishments
 
+#Accomplishments
 The app is responsive.
 References
-
 React
