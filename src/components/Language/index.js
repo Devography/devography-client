@@ -1,4 +1,5 @@
 import {useState, useEffect} from 'react'
+import {Card, ListGroup} from 'react-bootstrap/'
 import CreateComment from "../CreateComment"
 import Comments from "../Comments"
 
@@ -24,9 +25,18 @@ const Language = ({match}) => {
 
     return (
         <>
-        <p>Hello from the Language component</p>
+        <h1 style={{textAlign:'center'}}>{`{ ${language.name} }`}</h1>
+        <Card style={{width:'400px', margin:'20px auto'}}>
+            <Card.Img variant="top" src={language.logo} />
+            <Card.Body>
+            <ListGroup className="list-group-flush">
+                <ListGroup.Item>Author: {language.author}</ListGroup.Item>
+                <ListGroup.Item>Release Date: {language.year}</ListGroup.Item>
+            </ListGroup>
+            </Card.Body>
+        </Card>
         <CreateComment/>
-        <Comments/>
+        <Comments match={match} />
         </>
     )
 }
