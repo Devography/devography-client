@@ -1,5 +1,6 @@
 #devOgraphy
-![]Home_Mobile.jpeg
+Home_Mobile.jpeg![Home_Mobile](https://user-images.githubusercontent.com/65795477/125976547-f39ebe7f-00e5-4988-b107-ff53a5ca906f.jpeg)
+
 
 #Project Description
 devOgraphy is a working, interactive, full-stack application that receives data from . The app allows users to find a recipe that fits their dietary needs and search for any key ingredient that the user wants in the recipe. Click on the link below and start cooking!
