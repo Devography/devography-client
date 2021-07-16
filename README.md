@@ -53,6 +53,7 @@ Creating a responsive App. devOgraphy uses React bootstap along with Flexbox and
 ## Problem Areas
 One of the problem area was the API call being blocked by the CORS poilcy. Cross-origin resource sharing (CORS) allows the server to indicate other origins. To bypass the error, mode is a read only property that contains different type of mofe of request, one of which is 'cors'.
 
+
 ## Future Directions
 Creating a 'Favorite' Section (In-progress)
 .
