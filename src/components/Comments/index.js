@@ -46,8 +46,8 @@ export default function Comments(){
         <Container>
             {comments.map((comment, i) =>{
                 return(
-                    <div className='comment-container'>
-                        <div className='comment-items' key={i}>
+                    <div className='comment-container' key={i}>
+                        <div className='comment-items'>
                             <p><span style={{color:'blue'}}>{comment.name}</span>: {comment.body}</p>     
                         </div>
                         <div>
