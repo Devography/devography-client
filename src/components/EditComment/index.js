@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useHistory } from 'react-router-dom';
 import Form from 'react-bootstrap/Form'
 
@@ -12,10 +12,10 @@ export default function EditComment({ match, getLanguages }){
     })
 
     //Get Lanaguage URL 
-    const LANG_API_ENDPOINT = `http://localhost:8080/languages/${match.params.id}`
+    const LANG_API_ENDPOINT = `http://localhost:4000/languages/${match.params.id}`
     
     //Get comment URL
-    const COMM_API_ENDPOINT = `http://localhost:8080/comments/${match.params.commentId}`
+    const COMM_API_ENDPOINT = `http://localhost:4000/comments/${match.params.commentId}`
 
     //handle change
 
@@ -28,20 +28,20 @@ export default function EditComment({ match, getLanguages }){
         })
     }
 
-    //Get Comment Data 
-    // const getCommentsData = async () =>{
-    //     try{
-    //         const response = await fetch(LANG_API_ENDPOINT);
-    //         const data = await response.json();
-    //         console.log(data.comment)
-    //     }catch(err){
-    //         console.log(err)
-    //     }
-    // }
+    // Get Comment Data 
+    const getCommentsData = async () =>{
+        try{
+            const response = await fetch(LANG_API_ENDPOINT);
+            const data = await response.json();
+            console.log(data.comment)
+        }catch(err){
+            console.log(err)
+        }
+    }
 
-    // useEffect(()=>{
-    //     getCommentsData();
-    // },[])
+    useEffect(()=>{
+        getCommentsData();
+    },[])
 
     //handle Edit
         //Put method
@@ -55,7 +55,7 @@ export default function EditComment({ match, getLanguages }){
                     'Content-Type': 'application/json',
                 }
             })
-            if(response.status === 201){
+            if(response.status === 204){
                 getLanguages()
                 history.push(`/languages/${match.params.id}`)
             }else{
