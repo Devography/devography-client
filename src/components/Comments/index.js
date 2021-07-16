@@ -4,19 +4,24 @@ import { Link } from 'react-router-dom';
 
 export default function Comments(){
 
+    const [comments, setComments] = useState([]);
+
     //API call to post comments - will need to pass out match props to get lanaguage ID and pass it to req.body
 
-    const sampleCommentData=[
-        {
-            name: 'Trieu',
-            body: 'JavaScript is amazing!!'
-        },
-        {
-            name: 'Sammy',
-            body: 'I rated this app 10 out of 10, will come back again!'
+    const getCommentsData = async () => {
+        const LANG_API_ENDPOINT = `http://localhost:8080/languages/${match.params.id}`
+        try{
+            const response = await fetch(LANG_API_ENDPOINT);
+            const data = await response.json();
+            setComments(data.comment)
+        }catch(err){
+            console.log(err)
         }
+    }
 
-    ]
+    useEffect(()=>{
+        getCommentsData();
+    },[])
 
     //function to handle delete
 
