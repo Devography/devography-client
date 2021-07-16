@@ -1,28 +1,11 @@
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-import { useHistory } from 'react-router-dom';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 //pass out match from language
 export default function CreateComment({ match }){
-
-const [ language, setLanaguage ] = useState(null)
-const history = useHistory();
-
-const getIndividualLanguage = async () => {
-    try{
-        const response = await fetch(`http:localhost:4000/languages${match.params.id}`);
-        const data = response.json();
-        setLanaguage(data)
-    }catch(err){
-        console.log(err)
-    }
-}
-
-useEffect(()=>{
-    getIndividualLanguage();
-},[])
+console.log(match)
 
 // Modal state
 const [show, setShow] = useState(false);
@@ -32,8 +15,7 @@ const handleShow = () => setShow(true);
 
 const initialFormValues={
     name:"",
-    body:"",
-    languageId: `${match.params.id}`
+    body:""
 }
 
 const [newComment, setNewComment] = useState(initialFormValues);
@@ -48,7 +30,7 @@ const _handleChange = (e) => {
 
 const _handleSubmit = async(event) => {
     event.preventDefault();
-    const COMM_API_ENDPOINT = `http://localhost:4000/comments`
+    const COMM_API_ENDPOINT = `http://localhost:8080/comments/${match.params.id}`
     try{
         const response = await fetch(COMM_API_ENDPOINT, {
             method: 'POST',
@@ -58,9 +40,8 @@ const _handleSubmit = async(event) => {
             },
         });
         if (response.status === 201) {
-            getIndividualLanguage();
             setNewComment(initialFormValues);
-            history.push(`languages/${match.params.id}`)
+            // history.push(`languages/${match.params.id}`)
             handleClose();
         }else{
             alert("Oops, something went wrong. Try again")
@@ -101,7 +82,6 @@ const _handleSubmit = async(event) => {
             <Button variant="secondary" onClick={handleClose}>
                 Close
             </Button>
-            
             </Modal.Footer>
             </Modal>
         </>
