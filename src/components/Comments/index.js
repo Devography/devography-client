@@ -4,7 +4,7 @@ import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 
 export default function Comments({ match }) {
-  
+
   const [comments, setComments] = useState([]);
 
     const getCommentsData = async () => {
@@ -43,7 +43,7 @@ export default function Comments({ match }) {
     }
 
   if (!comments) {
-    return <p>No comments</p>
+    return <p>No comments</p>;
   }
 
   return (
