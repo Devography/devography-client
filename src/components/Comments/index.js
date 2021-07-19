@@ -1,15 +1,11 @@
-import {useState, useEffect} from 'react'
-import Container from 'react-bootstrap/Container'
-import Button from 'react-bootstrap/Button';
-import { Link } from 'react-router-dom';
+import { useState, useEffect } from "react";
+import Container from "react-bootstrap/Container";
+import Button from "react-bootstrap/Button";
+import { Link } from "react-router-dom";
 
 export default function Comments({ match }) {
+
   const [comments, setComments] = useState([]);
-
-  //API call to post comments - will need to pass out match props to get lanaguage ID and pass it to req.body
-
-
-    //API call to post comments - will need to pass out match props to get lanaguage ID and pass it to req.body
 
     const getCommentsData = async () => {
         const LANG_API_ENDPOINT = `https://devography.herokuapp.com/languages/${match.params.id}`
@@ -21,10 +17,10 @@ export default function Comments({ match }) {
             console.log(err)
         }
     }
-  };
 
   useEffect(() => {
     getCommentsData();
+    //eslint-disable-next-line
   }, []);
 
   //function to handle delete
@@ -45,7 +41,6 @@ export default function Comments({ match }) {
             console.log(err)
         }
     }
-  };
 
   if (!comments) {
     return <p>No comments</p>;
@@ -95,5 +90,5 @@ export default function Comments({ match }) {
         );
       })}
     </Container>
-  );
+  )
 }

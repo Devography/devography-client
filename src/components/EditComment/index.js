@@ -17,8 +17,6 @@ export default function EditComment({ match, getLanguages }){
     //Get comment URL
     const COMM_API_ENDPOINT = `https://devography.herokuapp.com/comments/${match.params.commentId}`
 
-    //handle change
-
     const _handleChange = (e) => {
         setUpdateComment((prevState) =>{
             return{
@@ -28,7 +26,6 @@ export default function EditComment({ match, getLanguages }){
         })
     }
 
-    // Get Comment Data 
     const getCommentsData = async () =>{
         try{
             const response = await fetch(LANG_API_ENDPOINT);
@@ -41,10 +38,9 @@ export default function EditComment({ match, getLanguages }){
 
     useEffect(()=>{
         getCommentsData();
+        // eslint-disable-next-line
     },[])
 
-    //handle Edit
-        //Put method
     const _handleEdit = async (e) =>{
         e.preventDefault()
         try{
