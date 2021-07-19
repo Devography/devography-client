@@ -11,7 +11,7 @@ export default function Comments({ match }){
     //API call to post comments - will need to pass out match props to get lanaguage ID and pass it to req.body
 
     const getCommentsData = async () => {
-        const LANG_API_ENDPOINT = `http://localhost:4000/languages/${match.params.id}`
+        const LANG_API_ENDPOINT = `https://devography.herokuapp.com/languages/${match.params.id}`
         try{
             const response = await fetch(LANG_API_ENDPOINT);
             const data = await response.json();
@@ -28,7 +28,7 @@ export default function Comments({ match }){
     //function to handle delete
 
     const _handleDelete = async (e) =>{
-        const COMM_API_ENDPOINT = `http://localhost:4000/comments/${e.target.value}`
+        const COMM_API_ENDPOINT = `https://devography.herokuapp.com/comments/${e.target.value}`
         try{
             const deleteComment = await fetch(COMM_API_ENDPOINT, {
                 method: 'DELETE',
