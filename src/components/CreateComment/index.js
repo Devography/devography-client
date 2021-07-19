@@ -3,11 +3,8 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import { useState } from 'react';
 
-//pass out match from language
 export default function CreateComment({ match }){
-console.log(match)
 
-// Modal state
 const [show, setShow] = useState(false);
 
 const handleClose = () => setShow(false);
@@ -26,11 +23,9 @@ const _handleChange = (e) => {
     )
 }
 
-//Need to add a refresh in handle submit functionality.
-
 const _handleSubmit = async(event) => {
     event.preventDefault();
-    const COMM_API_ENDPOINT = `http://localhost:4000/comments/${match.params.id}`
+    const COMM_API_ENDPOINT = `https://devography.herokuapp.com/comments/${match.params.id}`
     try{
         const response = await fetch(COMM_API_ENDPOINT, {
             method: 'POST',
@@ -41,7 +36,7 @@ const _handleSubmit = async(event) => {
         });
         if (response.status === 201) {
             setNewComment(initialFormValues);
-            // history.push(`languages/${match.params.id}`)
+            window.location.reload()            
             handleClose();
         }else{
             alert("Oops, something went wrong. Try again")
@@ -72,9 +67,6 @@ const _handleSubmit = async(event) => {
                     <Form.Label>Comment:</Form.Label>
                     <Form.Control as="textarea" rows={3} id="body" value={newComment.body} onChange={_handleChange} required/>
                     </Form.Group>
-                    {/* <Button variant="primary" onClick={_handleSubmit}>
-                        Save Comment
-                    </Button> */}
                     <input type="submit" value="Add Comment"/>
                 </Form>
             </Modal.Body>

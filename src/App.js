@@ -14,7 +14,7 @@ function App() {
   const [languages, setLanguages] = useState([]);
 
   const getLanguages = async () => {
-    const API_ENDPOINT = "http://localhost:4000/languages";
+    const API_ENDPOINT = "https://devography.herokuapp.com/languages";
     try {
       const response = await fetch(API_ENDPOINT);
       const data = await response.json();

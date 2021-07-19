@@ -12,10 +12,10 @@ export default function EditComment({ match, getLanguages }){
     })
 
     //Get Lanaguage URL 
-    const LANG_API_ENDPOINT = `http://localhost:4000/languages/${match.params.id}`
+    const LANG_API_ENDPOINT = `https://devography.herokuapp.com/languages/${match.params.id}`
     
     //Get comment URL
-    const COMM_API_ENDPOINT = `http://localhost:4000/comments/${match.params.commentId}`
+    const COMM_API_ENDPOINT = `https://devography.herokuapp.com/comments/${match.params.commentId}`
 
     //handle change
 

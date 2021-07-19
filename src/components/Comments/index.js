@@ -1,21 +1,25 @@
-import { useState, useEffect } from "react";
-import Container from "react-bootstrap/Container";
-import Button from "react-bootstrap/Button";
-import { Link } from "react-router-dom";
+import {useState, useEffect} from 'react'
+import Container from 'react-bootstrap/Container'
+import Button from 'react-bootstrap/Button';
+import { Link } from 'react-router-dom';
 
 export default function Comments({ match }) {
   const [comments, setComments] = useState([]);
 
   //API call to post comments - will need to pass out match props to get lanaguage ID and pass it to req.body
 
-  const getCommentsData = async () => {
-    const LANG_API_ENDPOINT = `http://localhost:4000/languages/${match.params.id}`;
-    try {
-      const response = await fetch(LANG_API_ENDPOINT);
-      const data = await response.json();
-      setComments(data.comments);
-    } catch (err) {
-      console.log(err);
+
+    //API call to post comments - will need to pass out match props to get lanaguage ID and pass it to req.body
+
+    const getCommentsData = async () => {
+        const LANG_API_ENDPOINT = `https://devography.herokuapp.com/languages/${match.params.id}`
+        try{
+            const response = await fetch(LANG_API_ENDPOINT);
+            const data = await response.json();
+            setComments(data.comments)
+        }catch(err){
+            console.log(err)
+        }
     }
   };
 
@@ -25,20 +29,21 @@ export default function Comments({ match }) {
 
   //function to handle delete
 
-  const _handleDelete = async (e) => {
-    const COMM_API_ENDPOINT = `http://localhost:4000/comments/${e.target.value}`;
-    try {
-      const deleteComment = await fetch(COMM_API_ENDPOINT, {
-        method: "DELETE",
-      });
-      if (deleteComment.status === 204) {
-        console.log("Comment have been deleted");
-        getCommentsData();
-      } else {
-        alert("Oops, something went wrong!");
-      }
-    } catch (err) {
-      console.log(err);
+    const _handleDelete = async (e) =>{
+        const COMM_API_ENDPOINT = `https://devography.herokuapp.com/comments/${e.target.value}`
+        try{
+            const deleteComment = await fetch(COMM_API_ENDPOINT, {
+                method: 'DELETE',
+            })
+            if(deleteComment.status === 204){
+                console.log('Comment have been deleted')
+                getCommentsData();
+            }else{
+                alert('Oops, something went wrong!')
+            }
+        }catch(err){
+            console.log(err)
+        }
     }
   };
 
