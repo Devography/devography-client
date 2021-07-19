@@ -1,70 +1,113 @@
-# Getting Started with Create React App
+## devOgraphy
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[Home_Mobile](https://user-images.githubusercontent.com/65795477/125976547-f39ebe7f-00e5-4988-b107-ff53a5ca906f.jpeg)
 
-## Available Scripts
+## Project Description
 
-In the project directory, you can run:
+devOgraphy is a working, interactive, full-stack application that receives data from a custom API that we designed. The app allows users to learn more about programming languages, their icons, their authors, and their creation date.
 
-### `yarn start`
+Your front-end must use React and leverage the backend API in the above requirements.
+You must communicate with the back-end API RESTfully to Create, Read, Update, and Destroy resources (using either fetch or axios).
+You must use either CSS Grid or Flexbox along with media queries to make your app responsive across mobile, tablet, and desktop widths.
+You must have at least 4 components
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Link To Site: https://devography.netlify.app/
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Programs/Applications Used:
 
-### `yarn test`
+React
+JSX
+CSS
+Yarn
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Dependencies
 
-### `yarn build`
+react": "^17.0.2",
+"react-bootstrap": "^1.6.1",
+"react-dom": "^17.0.2",
+"react-icons": "^4.2.0",
+"react-router": "^5.2.0",
+"react-router-bootstrap": "^0.25.0",
+"react-router-dom": "^5.2.0",
+"react-scripts": "4.0.3",
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## User Stories (MVP/CRUD)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+User Stories (MVP/CRUD)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- As a user of Devography, I want to be able to view the top programming language and view the properties of each language so I can have all the information in a centralized location.
+- As a user of Devography, I want to be able to create comments about programming language to be add to the database so that I can interact with the app.
+- As a user of Devography, I want to be able to see my created post so that I know my post is saved.
+- As a user of Devography, I want to be able to update a post incase I make a mistake.
+- As a user of Devography, I want to be able to delete my post so that I can remove any unwanted post.
 
-### `yarn eject`
+## Learning Experience
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Cut problems into smaller pieces and console.log any unknown data. This was our first project as a team and so we relied heavily upon each other to debug our own problems. We learned a lot about communication, division of labor, project management, and how to utilize each of our individual strengths. Read documentation!!! Most of the answers are available if you know where and how to search.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Setting Up Project
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+One of the key feature of React is the composition of the functional components. Components are reuseable functions in React, and in order to efficiently build our app, we had to carefully decide on a uniform set of data and plan who would work on which components. Before diving into the creating the app, it was important to understand the components hierarchy.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Building the Core Structure
 
-## Learn More
+React Components
+The Component Hierarchy diagram, above, represents of how the components are structured in our app. In devOgraphy, there are 8 components. Each being a child of the 'App' components, except for the NavHeader and the Footer component.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+In this case, all of the event listeners and the main API calls were done in the 'App.js' file and that data is passed down to Languages and then Language.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Dynamic API Calls
 
-### Code Splitting
+By creating our own API, devOgraphy is able to make dynamic request. For this app, the programming languages endpoint was used. So different props variables were created to make multiple calls.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## User Experience - Responsive design.
 
-### Analyzing the Bundle Size
+Creating a responsive App. devOgraphy uses React bootstap paired with Flexbox and media queries in order to make it responsive across mobile, tablet, and desktop widths.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Problem Areas
 
-### Making a Progressive Web App
+## Future Directions
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+User Stories (Stretch Goals)
 
-### Advanced Configuration
+- As a user of Devography, I want a search feature that allows me to search either programing languages or paradigm and get a result of different usage. (edited)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Accomplishments
 
-### Deployment
+The app is responsive.
+References
+React
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+# Foobar
 
-### `yarn build` fails to minify
+Foobar is a Python library for dealing with word pluralization.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Installation / Dependencies
+
+Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
+
+## Usage
+
+```python
+import foobar
+
+# returns 'words'
+foobar.pluralize('word')
+
+# returns 'geese'
+foobar.pluralize('goose')
+
+# returns 'phenomenon'
+foobar.singularize('phenomena')
+
+```
+
+## Roadmap
+
+## Support
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+## License
