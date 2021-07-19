@@ -6,7 +6,7 @@ import Comments from "../Comments"
 const Language = ({match}) => {
 
     const [language, setLanguage] = useState([])
-    const API_ENDPOINT_ID = `http://localhost:4000/languages/${match.params.id}`
+    const API_ENDPOINT_ID = `https://devography.herokuapp.com/languages/${match.params.id}`
 
     const getLanguage = async () => {
         try {
