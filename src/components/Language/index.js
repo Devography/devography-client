@@ -25,12 +25,12 @@ const Language = ({match}) => {
 
     return (
         <>
-        <h1 style={{textAlign:'center'}}>{`{ ${language.name} }`}</h1>
-        <Card style={{width:'400px', margin:'20px auto'}}>
+        <h1>{`{ ${language.name} }`}</h1>
+        <Card className="single-card">
             <Card.Img variant="top" src={language.logo} />
             <Card.Body>
             </Card.Body>
-            <ListGroup bsPrefix={'custom-card'}className="list-group-flush">
+            <ListGroup className="list-group-flush">
                 <ListGroup.Item>Author: {language.author}</ListGroup.Item>
                 <ListGroup.Item>Release Date: {language.year}</ListGroup.Item>
             </ListGroup>
