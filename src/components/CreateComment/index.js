@@ -48,13 +48,14 @@ const _handleSubmit = async(event) => {
 }
     return(
         <>
-        <h2 style={{textAlign:'center'}}> {"{"} Comments {"}"}</h2>
-        <Button variant="outline-secondary" onClick={handleShow}>
-            Add a Comment
-        </Button>
-
+        <div className="comments-header">
+            <h2 style={{textAlign:'center'}}> {"{"} Comments {"}"}</h2>
+            <Button variant="secondary" onClick={handleShow}>
+                Add a Comment
+            </Button>
+        </div>
         <Modal show={show} onHide={handleClose}>
-            <Modal.Header closeButton>
+            <Modal.Header>
             <Modal.Title>Add a Comment</Modal.Title>
             </Modal.Header>
             <Modal.Body>
