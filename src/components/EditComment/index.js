@@ -64,8 +64,8 @@ export default function EditComment({ match, getLanguages }){
 
     return(
         <div>
-            <h1>Edit Comments</h1>
-            <Form onSubmit={_handleEdit}>
+            <h1>Edit Comment</h1>
+            <Form className="edit-comment" onSubmit={_handleEdit}>
                     <Form.Group className="mb-3">
                     <Form.Label>Name:</Form.Label>
                     <Form.Control type="name" id="name"value={updateComment.name} onChange={_handleChange} required/>

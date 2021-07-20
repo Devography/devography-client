@@ -47,7 +47,7 @@ export default function Comments({ match }) {
   }
 
   return (
-    <Container>
+    <>
       {comments.map((comment, i) => {
         return (
           <div className="comment-container" key={i}>
@@ -66,7 +66,7 @@ export default function Comments({ match }) {
                 </small>
               )}
             </div>
-            <div>
+            <div className="btn-container">
               <Button variant="outline-secondary">
                 <Link
                   style={{
@@ -89,6 +89,6 @@ export default function Comments({ match }) {
           </div>
         );
       })}
-    </Container>
+    </>
   )
 }

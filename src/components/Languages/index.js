@@ -9,7 +9,7 @@ const Languages = ({match, languages}) => {
           languages.map((language, idx) => {
             return (
                 <Link to={`/languages/${language._id}`} key={idx}>
-                    <Card style={{maxWidth: "200px"}}>
+                    <Card>
                         <Card.Img variant="top" src={language.logo}/>
                         <Card.Body>
                         <Card.Title>{language.name}</Card.Title>
