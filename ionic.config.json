@@ -1,0 +1,7 @@
+{
+  "name": "devography-client",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
