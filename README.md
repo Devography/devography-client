@@ -3,30 +3,30 @@
 # Contributors:
 
 <br />
-<img  align="left" class="avatar avatar-user" src="https://avatars.githubusercontent.com/u/83781116?v=4" width="44" height="44" alt="@trieule50">
+<img  align="left" class="avatar avatar-user" src="https://avatars.githubusercontent.com/u/83842451?v=4" width="44" height="44" alt="@trieule50">
 
 **Trieu Lee** - Full Stack Web Developer<br>
-[GitHub](https://github.com/trieule50) • [LinkedIn](https://www.linkedin.com/in/stevensemco/)
+[GitHub](https://github.com/trieule50) • [LinkedIn](https://www.linkedin.com/in/trieule1/)
 
 <img  align="left" class="avatar avatar-user" src="https://avatars.githubusercontent.com/u/65795477?v=4" width="44" height="44" alt="@CrowdedAstronaut">
 
 **Ross Phillips** - Full Stack Web Developer<br>
 [GitHub](https://github.com/CrowdedAstronaut) • [LinkedIn](https://www.linkedin.com/in/johnrossphillips/)
 
-<img align="left" class="avatar avatar-user" src="https://avatars.githubusercontent.com/u/83373381?v=4" width="44" height="44" alt="@abrarmohammed109">
+<img align="left" class="avatar avatar-user" src="https://avatars.githubusercontent.com/u/83424322?v=4" width="44" height="44" alt="@abrarmohammed109">
 
 **Mohammed Abrar** - Full Stack Web Developer<br>
-[GitHub](https://github.com/abrarmohammed109) • [LinkedIn](https://www.linkedin.com/in/adinaweinberg/)
+[GitHub](https://github.com/abrarmohammed109) • [LinkedIn](https://www.linkedin.com/in/abrarmohammed/)
 
 <img align="left" class="avatar avatar-user" src="https://avatars.githubusercontent.com/u/77644242?v=4" width="44" height="44" alt="@turekjesse">
 
 **Jesse Turek** - Full Stack Web Developer<br>
 [GitHub](https://github.com/turekjesse) • [LinkedIn](https://www.linkedin.com/in/turekjesse/)
 
-<img align="left" class="avatar avatar-user" src="https://avatars.githubusercontent.com/u/77644242?v=4" width="44" height="44" alt="@income3000">
+<img align="left" class="avatar avatar-user" src="https://avatars.githubusercontent.com/u/84121059?v=4" width="44" height="44" alt="@income3000">
 
 **Lou Thomas** - Full Stack Web Developer<br>
-[GitHub](https://github.com/income3000) • [LinkedIn](https://www.linkedin.com/in/turekjesse/)
+[GitHub](https://github.com/income3000) • [LinkedIn](https://www.linkedin.com/in/lou-thomas/)
 
 <br />
 
