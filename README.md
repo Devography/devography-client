@@ -1,5 +1,46 @@
 ## devOgraphy
 
+# Contributors:
+
+<br />
+<img  align="left" class="avatar avatar-user" src="https://avatars.githubusercontent.com/u/83781116?v=4" width="44" height="44" alt="@trieule50">
+
+**Trieu Lee** - Full Stack Web Developer<br>
+[GitHub](https://github.com/trieule50) • [LinkedIn](https://www.linkedin.com/in/stevensemco/)
+
+<img  align="left" class="avatar avatar-user" src="https://avatars.githubusercontent.com/u/65795477?v=4" width="44" height="44" alt="@CrowdedAstronaut">
+
+**Ross Phillips** - Full Stack Web Developer<br>
+[GitHub](https://github.com/CrowdedAstronaut) • [LinkedIn](https://www.linkedin.com/in/johnrossphillips/)
+
+<img align="left" class="avatar avatar-user" src="https://avatars.githubusercontent.com/u/83373381?v=4" width="44" height="44" alt="@abrarmohammed109">
+
+**Mohammed Abrar** - Full Stack Web Developer<br>
+[GitHub](https://github.com/abrarmohammed109) • [LinkedIn](https://www.linkedin.com/in/adinaweinberg/)
+
+<img align="left" class="avatar avatar-user" src="https://avatars.githubusercontent.com/u/77644242?v=4" width="44" height="44" alt="@turekjesse">
+
+**Jesse Turek** - Full Stack Web Developer<br>
+[GitHub](https://github.com/turekjesse) • [LinkedIn](https://www.linkedin.com/in/turekjesse/)
+
+<img align="left" class="avatar avatar-user" src="https://avatars.githubusercontent.com/u/77644242?v=4" width="44" height="44" alt="@income3000">
+
+**Lou Thomas** - Full Stack Web Developer<br>
+[GitHub](https://github.com/income3000) • [LinkedIn](https://www.linkedin.com/in/turekjesse/)
+
+<br />
+
+# Table of Contents
+
+- [About this project](#about)
+- [Workflow](#workflow)
+- [Technologies](#technologies)
+- [Links](#links)
+- [Installation](#install)
+- [APIs](#apis)
+
+<hr />
+<br />
 [Home_Mobile](https://user-images.githubusercontent.com/65795477/125976547-f39ebe7f-00e5-4988-b107-ff53a5ca906f.jpeg)
 
 ## Project Description
@@ -62,22 +103,3 @@ This application uses a Node, Express, and Mongoose API. There is Create, Read, 
 yarn add react-bootstrap react-dom react-icons react-router react-router-bootstrap
 
 ```
-
-## Dependencies
-
-react": "^17.0.2",
-"react-bootstrap": "^1.6.1",
-"react-dom": "^17.0.2",
-"react-icons": "^4.2.0",
-"react-router": "^5.2.0",
-"react-router-bootstrap": "^0.25.0",
-"react-router-dom": "^5.2.0",
-"react-scripts": "4.0.3",
-
-## Support
-
-## Contributing
-
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-## License
