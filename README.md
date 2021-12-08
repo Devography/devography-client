@@ -64,13 +64,21 @@ Yarn
 - As a user of devOgraphy, I want to be able to update a post incase I make a mistake.
 - As a user of devOgraphy, I want to be able to delete my post so that I can remove any unwanted post.
 
+## Workflow
+Our team used Agile workflow for this sprint.
+
+# Trello
+A [Trello](https://trello.com/b/wuiNN4iB/devography) board was used to create and track tickets. We held daily meetings to discuss accomplishments, challenges, and upcoming tickets. To effectively collaborate remotely while allowing for quick communication if needed, we utilized Slack and Zoom.   
+
+# Version Control
+We implemented Git Feature Branch Workflow. All pull requests in Github were reviewed by another team member before being merged into the main branch.
 ## Learning Experience
 
 Cut problems into smaller pieces and console.log any unknown data. This was our first project as a team and so we relied heavily upon each other to debug our own problems. We learned a lot about communication, division of labor, project management, and how to utilize each of our individual strengths. Read documentation!!! Most of the answers are available if you know where and how to search.
 
 ## Setting Up Project
 
-One of the key feature of React is the composition of the functional components. Components are reuseable functions in React, and in order to efficiently build our app, we had to carefully decide on a uniform set of data and plan who would work on which components. Before diving into the creating the app, it was important to understand the components hierarchy. We used Trello as our planning/project management tool, and the link is [Here](https://trello.com/b/wuiNN4iB/devography)
+One of the key feature of React is the composition of the functional components. Components are reuseable functions in React, and in order to efficiently build our app, we had to carefully decide on a uniform set of data and plan who would work on which components. Before diving into the creating the app, it was important to understand the components hierarchy.
 
 ## Building the Core Structure
 
@@ -100,6 +108,6 @@ This application uses a Node, Express, and Mongoose API. There is Create, Read, 
 ## Installation
 
 ```
-yarn add react-bootstrap react-dom react-icons react-router react-router-bootstrap
+yarn install
 
 ```
