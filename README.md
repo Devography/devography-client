@@ -70,7 +70,7 @@ Cut problems into smaller pieces and console.log any unknown data. This was our 
 
 ## Setting Up Project
 
-One of the key feature of React is the composition of the functional components. Components are reuseable functions in React, and in order to efficiently build our app, we had to carefully decide on a uniform set of data and plan who would work on which components. Before diving into the creating the app, it was important to understand the components hierarchy.
+One of the key feature of React is the composition of the functional components. Components are reuseable functions in React, and in order to efficiently build our app, we had to carefully decide on a uniform set of data and plan who would work on which components. Before diving into the creating the app, it was important to understand the components hierarchy. We used Trello as our planning/project management tool, and the link is [Here](https://trello.com/b/wuiNN4iB/devography)
 
 ## Building the Core Structure
 
